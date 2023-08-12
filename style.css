@@ -1,29 +1,33 @@
 
-body, h1, h2, h3, p, ul, ol, li, form {
+body, h1, h2, h3, p, ul, ol, li, form 
+{
     margin: 0;
     padding: 0;
 }
 
 
 
-body {
+body 
+{
     font-family: Arial, sans-serif;
     
 }
 
 /* For Header */
-.header {
+.header 
+{
     text-align: start;
     padding: 20px 0;
     background-image: url('https://cdn.discordapp.com/attachments/1139769272973922358/1139789881938280448/Student_Management_Form.png');
     background-size: cover;
-    background-position: 10% 22%;
+    background-position: 10% 15%;
     margin-bottom: 10px;
     color: white;
     position: relative; 
 }
 
-.header::before {
+.header::before 
+{
     content: "";
     position: absolute;
     top: 0;
@@ -34,7 +38,8 @@ body {
     z-index: -1;
 }
 
-.header a {
+.header a 
+{
     text-decoration: none;
     color: white;
     padding: 10px 15px;
@@ -43,18 +48,30 @@ body {
     transition: background-color 0.3s;
 }
 
-.header a:hover {
+.header a:hover 
+{
     background-color: #555;
 }
 
-.header .logo {
+.header .logo 
+{
     display: inline-block;
     vertical-align: middle;
     max-width: 100px;
-    margin-right: 10px;
+    margin-right: 19px;
+    margin-left: 50px;
 }
 
-.header h1 {
+.header .yline
+{
+    vertical-align: middle;
+    width: 5px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.header h1 
+{
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -64,70 +81,91 @@ body {
 
 
 /* For Table */
-.table {
+.table 
+{
     width: 100%;
     margin-bottom: 20px;
     background-color: #f9f9f9;
 }
 
-.table th, .table td {
+tr:nth-child(1)
+{
+  background-color: #d33929;
+  color:white;
+}
+
+.table th, .table td 
+{
     border: 1px solid black;
     padding: 10px;
     text-align: center;
 }
 
 /* Form Styles */
-.records {
+.records 
+{
     margin:auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
+    border-radius: 10px;
     width: 300px;
     
 }
 
-.records label {
+.records label 
+{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.records input {
+.records input 
+{
     width: 95%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.records button {
+/* Buttons */ 
+.records button 
+{
     display: block;
     width: 100%;
     padding: 8px;
-    background-color: #747679; /*   */
+    background-color: #747679; 
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
    
 }
 
-.records button.save-button:hover {
-    background-color: #0604a5; /* Green color on hover for "Save" button */
+.records button.save-button:hover 
+{
+    background-color: rgb(0, 66, 189); 
 }
 
 .records button.clear-button:hover {
-    background-color: #424040; /* Red color on hover for "Clear" button */
+    background-color: #424040; 
 }
 
 
-.button-container {
+.button-container 
+{
     display: flex;
     justify-content: space-between;
 }
 
-.records button:first-child{
+.records button:first-child
+{
     margin-right: 10px;
-    background-color: rgb(75, 75, 224);
+    background-color: rgb(50, 111, 224);
+    border-radius: 5px;
 
 }
 
