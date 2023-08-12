@@ -1,0 +1,134 @@
+
+body, h1, h2, h3, p, ul, ol, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+/* For Header */
+.header {
+    text-align: start;
+    padding: 20px 0;
+    background-image: url('https://cdn.discordapp.com/attachments/1139769272973922358/1139789881938280448/Student_Management_Form.png');
+    background-size: cover;
+    background-position: 10% 22%;
+    margin-bottom: 10px;
+    color: white;
+    position: relative; 
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header a:hover {
+    background-color: #555;
+}
+
+.header .logo {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    color: white;
+}
+
+
+
+/* For Table */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.table th, .table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form Styles */
+.records {
+    margin:auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    width: 300px;
+    
+}
+
+.records label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.records input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.records button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #747679; /*   */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.records button.save-button:hover {
+    background-color: #0604a5; /* Green color on hover for "Save" button */
+}
+
+.records button.clear-button:hover {
+    background-color: #424040; /* Red color on hover for "Clear" button */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.records button:first-child{
+    margin-right: 10px;
+    background-color: rgb(75, 75, 224);
+
+}
+
+
