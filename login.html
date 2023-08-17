@@ -6,25 +6,33 @@ To Do: Implement submit and cancel functionality -->
 
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Login Page</title>
+</head>
 <body>
     <center>
-        &nbsp;
-        &nbsp;
-    <form class="login">
-        <label for="txtUsername"> Username: </label>
-        <input type="text" id="txtUsername" name="txtUsername"><br>
+        <script>
+            function onLoginBtnClick() {
+                alert(document.getElementById("txtUsername").value);
+            }
 
-        <label for="txtPassword"> Password: </label>
-        <input type="text" id="txtPassword" name="txtPassword"><br>
-         
-        &nbsp;
+            function onClearBtnClick() {
+                document.getElementById("txtUsername").value = "";
+            }
+        </script>
 
-        <div class="button">
-            <button type="submit" class="btnSubmit"> SUBMIT </button>
-            <button type="button" class="btnCancel"> CANCEL </button>
-        </div>
-    </form>
-    
-</center>
+        <form class="login">
+            <label for="txtUsername"> Username: </label>
+            <input type="text" id="txtUsername" name="txtUsername"><br>
+
+            <label for="txtPassword"> Password: </label>
+            <input type="text" id="txtPassword" name="txtPassword"><br>
+
+            <div class="button">
+                <button type="button" onclick="onLoginBtnClick()"> Login </button>
+                <button type="button" onclick="onClearBtnClick()"> Clear </button>
+            </div>
+        </form>
+    </center>
 </body>
 </html>
