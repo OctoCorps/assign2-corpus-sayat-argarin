@@ -9,9 +9,24 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login Page</title>
    <script>
-     function onLoginBtnClick() {
-       alert(document.getElementById("txtUsername").value);
-     }
+   function onLoginBtnClick() {
+    let errorMsg = "INCOMPLETE LOGIN DETAILS";
+    const username = document.getElementById("txtUsername").value.trim();
+    let isUsernameEmpty = true;
+
+    if (username.length === 0) {
+        isUsernameEmpty = true;
+        alert(errorMsg);
+        errorMsg = "ERROR: Either the username or the password was not provided. Please try again.";
+    } else {
+        isUsernameEmpty = false;
+    }
+
+    console.log("isUsernameEmpty =", isUsernameEmpty);
+}
+
+ 
+
      function onClearBtnClick() {
        document.getElementById("txtUsername").value = "";
      }
