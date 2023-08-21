@@ -8,11 +8,32 @@ To Do: Implement submit and cancel functionality -->
     <title>Login</title>
 
     <script>
-        function onLoginBtnClick(){
-        alert(document.getElementById("txtUsername").value);
+        function onLoginBtnClick() 
+        {
+            const errorMsg = "ERROR: Either the username or the password were not provided. Please try again.";
+            
+            var username = document.getElementById("txtUsername").value.trim();
+            let isUsernameEmpty = false;
+
+            if (username.length === 0) 
+            {
+                isUsernameEmpty = true;
+                alert(errorMsg);
+                errorMsg = "ERROR: Either the username or the password were not provided. Please try again.";
+            } 
+            
+            else 
+            {
+                isUsernameEmpty = false;
+            }
+
+             console.log("isUsernameEmpty=", isUsernameEmpty);
         }
-        function onClearBtnClick(){
-        document.getElementById("txtUsername").value = "";
+
+            
+        function onClearBtnClick()
+        {
+            document.getElementById("txtUsername").value = "";
         }
         </script>
 
@@ -27,7 +48,7 @@ To Do: Implement submit and cancel functionality -->
     <input type="text" id="txtPassword" name="txtPassword"><br>
 
     <div class="button-container">
-        <button type="submit" onClick="onLoginBtnClick()">Login</button>
+        <button type="button" onClick="onLoginBtnClick()">Login</button>
         <button type="button" onClick="onClearBtnClick()">Clear</button>
         
     </div>
